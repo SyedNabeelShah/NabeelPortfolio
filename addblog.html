@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="homepage">
+    <meta name="author" content="Syed Nabeel Shah">
+    <link rel="reset" href="reset.css"/>
+    <link rel="stylesheet" href="addBlog.css"/>
+    <link rel="stylesheet" href="mobileHomepage.css" media="screen and (max-width:768px)">
+    <title>Blog</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Medefaidrin:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Syed Shah.</h1>
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">HOME</a></li>
+                    <li><a href="resume.html">EXPERIENCE</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="viewBlog.php">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main">
+        <div></div>
+        <div>
+            <form method="POST" action="addPost.php">
+                <fieldset id="addBlog">
+                    <legend>Add Blog</legend>
+                    <input type="text" id="title" name="title" placeholder="Title">
+                    <textarea id="text" name="text" placeholder="Enter your text here"></textarea>
+                    <button id="post" type="submit">Post</button>
+                    <button id="clear" type="reset">Clear</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <script src="addBlog.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+/* Header styling */
+header {
+    /* Layout */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* Background and Typography */
+    background-color: black;
+    color: white;
+    padding-left: 0.8rem;
+}
+
+/* Typography */
+.header-left {
+    font-family: "Kode Mono", monospace;
+    padding-left: 0.7rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/* Navigation */
+.header-right ul {
+    list-style-type: none;
+    display: flex;
+    font-family: "Kode Mono", monospace;
+}
+
+.header-right ul li {
+    /* Box Model */
+    margin-right: 1.4rem;
+    margin-left: 1rem;
+}
+
+/* Typography */
+.header-right ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+
+/* Typography */
+.header-right ul li a:hover {
+    color: grey;
+}
+
+/* Typography */
+nav ul li:nth-child(2) a {
+    color: grey;
+}
+
+/* Main body */
+.main {
+    /* Layout */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* Background */
+    background-image: url('back.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Box Model */
+    padding-bottom: 2rem;
+}
+
+/* Image */
+.main img {
+    /* Layout */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    /* Box Model */
+    padding: 1rem;
+    width: 30rem;
+    height: 42rem;
+}
+
+/* Table */
+#languages {
+    grid-column-start: 2;
+    /* Layout */
+    display: flex;
+    flex-wrap: nowrap; /* Updated */
+    justify-content: center;
+    color: white;
+}
+
+/* Table cell */
+#languages tr {
+    /* Layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Box Model */
+    width: 50%;
+    padding: 1rem;
+    padding-left: 17rem;
+    font-family: "Kode Mono", monospace;
+}
+
+/* Icon */
+#languages td img {
+    /* Box Model */
+    width: 5rem;
+    height: 5.5rem;
+}

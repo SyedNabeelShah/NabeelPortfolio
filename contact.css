@@ -1,0 +1,74 @@
+/* Header styling */
+header {
+    /* Layout */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* Background and Typography */
+    background-color: black;
+    color: white;
+    padding-left: 0.8rem;
+}
+
+/* Typography */
+.header-left {
+    font-family: "Kode Mono", monospace;
+    padding-left: 0.7rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/* Navigation */
+.header-right ul {
+    list-style-type: none;
+    display: flex;
+    font-family: "Kode Mono", monospace;
+}
+
+.header-right ul li {
+    /* Box Model */
+    margin-right: 1.4rem;
+    margin-left: 1rem;
+}
+
+/* Typography */
+.header-right ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+
+/* Typography */
+.header-right ul li a:hover {
+    color: grey;
+}
+
+/* Typography */
+nav ul li:nth-child(5) a {
+    color: grey;
+}
+
+/* Main body */
+.main {
+    /* Layout */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* Background */
+    background-image: url('back.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Box Model */
+    padding-bottom: 22rem;
+    padding-top: 2rem;
+}
+
+/* Image */
+.main img {
+    /* Box Model */
+    padding: 1rem;
+    width: 20rem;
+    height: 20rem;
+}

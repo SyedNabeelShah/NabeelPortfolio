@@ -1,0 +1,118 @@
+/* Header styling */
+header {
+    /* Layout */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* Background and Typography */
+    background-color: black;
+    color: white;
+    padding-left: 0.8rem;
+}
+
+/* Typography */
+.header-left {
+    font-family: "Kode Mono", monospace;
+    padding-left: 0.7rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/* Navigation */
+.header-right ul {
+    list-style-type: none;
+    display: flex;
+    font-family: "Kode Mono", monospace;
+}
+
+.header-right ul li {
+    /* Box Model */
+    margin-right: 1.4rem;
+    margin-left: 1rem;
+}
+
+/* Typography */
+.header-right ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+
+/* Typography */
+.header-right ul li a:hover {
+    color: grey;
+}
+
+/* Typography */
+nav ul li:nth-child(1) a {
+    color: grey;
+}
+
+/* Main body */
+div.main {
+    /* Layout */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* Background */
+    background-image: url('back.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* Box Model */
+    padding-bottom: 1.5rem;
+}
+
+/* Hi message */
+section#big {
+    /* Layout */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /* Typography */
+    font-family: "Bayon", sans-serif;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
+/* Image */
+section#image {
+    /* Layout */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /* Box Model */
+    padding: 1rem;
+    padding-left: 14.6rem;
+}
+
+/* Typography */
+section#image figcaption {
+    color: white;
+    padding-left: 2rem;
+    font-family: "Kode Mono", monospace;
+    font-size: 0.8rem;
+}
+
+/* Image */
+section#image img {
+    width: 15rem;
+    height: auto;
+}
+
+/* Text */
+section#text {
+    /* Layout */
+    grid-column: 1;
+    grid-row-start: 2;
+    /* Typography */
+    color: white;
+    font-family: "Sulphur Point", sans-serif;
+    /* Box Model */
+    padding-top: 2.5rem;
+    padding-left: 1rem;
+}

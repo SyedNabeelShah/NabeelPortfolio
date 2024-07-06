@@ -1,0 +1,114 @@
+/* Header styling */
+header {
+    /* Layout */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* Background and Typography */
+    background-color: black;
+    color: white;
+    padding-left: 0.8rem;
+}
+
+/* Typography */
+.header-left {
+    font-family: "Kode Mono", monospace;
+    padding-left: 0.7rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/* Navigation */
+.header-right ul {
+    list-style-type: none;
+    display: flex;
+    font-family: "Kode Mono", monospace;
+}
+
+.header-right ul li {
+    /* Box Model */
+    margin-right: 1.4rem;
+    margin-left: 1rem;
+}
+
+/* Typography */
+.header-right ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+
+/* Typography */
+.header-right ul li a:hover {
+    color: grey;
+}
+
+/* Typography */
+nav ul li:nth-child(4) a {
+    color: grey;
+}
+
+/* Main body */
+.main {
+    /* Layout */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* Background */
+    background-image: url('back.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 15rem;
+}
+
+/* CSS for Blog Post Form */
+/* Layout */
+fieldset#addBlog {
+    /* Box Model */
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* Typography */
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+/* Form input */
+#addBlog input,
+#addBlog textarea {
+    /* Box Model */
+    display: block; 
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+/* Button */
+#addBlog button {
+    /* Box Model */
+    width: 49%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    /* Background and Typography */
+    background-color: lightyellow;
+    font-family: "Noto Sans Medefaidrin", sans-serif;
+}
+
+/* Textarea */
+#addBlog textarea {
+    height: 100px;
+}
+
+/* CSS for highlighting error fields */
+#addBlog .error {
+    border: 0.25rem solid red; /* Add a red border */
+    box-shadow: 0 0 0.7rem yellow; /* Add a red shadow */
+}

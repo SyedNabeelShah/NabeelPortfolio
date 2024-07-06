@@ -1,0 +1,166 @@
+/* Header styling */
+header {
+    /* Layout */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* Background and Typography */
+    background-color: black;
+    color: white;
+    padding-left: 0.8rem;
+}
+
+/* Typography */
+.header-left {
+    font-family: "Kode Mono", monospace;
+    padding-left: 0.7rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/* Navigation */
+.header-right ul {
+    list-style-type: none;
+    display: flex;
+    font-family: "Kode Mono", monospace;
+}
+
+.header-right ul li {
+    /* Box Model */
+    margin-right: 1.4rem;
+    margin-left: 1rem;
+}
+
+/* Typography */
+.header-right ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+
+/* Typography */
+.header-right ul li a:hover {
+    color: grey;
+}
+
+/* Typography */
+nav ul li:nth-child(4) a {
+    color: grey;
+}
+
+/* Blog styling */
+.blog {
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    /* Box Model */
+    padding: 1rem;
+    margin-bottom: 2rem;
+    /* Background and Typography */
+    background-color: black;
+    color: white;
+}
+
+.blog .date-time {
+    /* Typography */
+    font-size: 0.8rem;
+    color: lightyellow;
+    text-align: right;
+}
+
+.blog .title {
+    /* Typography */
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.blog .text {
+    /* Typography */
+    font-size: 1rem;
+    color: white;
+    margin-top: 0.5rem;
+}
+
+
+.add-post {
+    /* Box Model */
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    /* Background and Typography */
+    background-color: yellow;
+    text-decoration: none;
+    /* Typography */
+    font-size: 1rem;
+    font-family: "Kode Mono", monospace;
+    text-transform: uppercase;
+    border: 1px solid black;
+    text-align: center;  
+}
+
+.add-post:hover {
+    /* Background and Typography */
+    background-color: black;
+    font-style: italic;
+    color: white
+}
+
+.add-post a {
+    /* Typography */
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Additional styling for welcome message */
+.welcome-message {
+    /* Typography */
+    font-size: 1.2rem;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border: 1px solid black;
+    font-family: "Kode Mono", monospace;
+}
+
+.logout {
+    /* Box Model */
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    /* Background and Typography */
+    background-color: yellow;
+    text-decoration: none;
+    /* Typography */
+    font-size: 1rem;
+    font-family: "Kode Mono", monospace;
+    text-transform: uppercase;
+    border: 1px solid black;
+    text-align: center;  
+}
+
+.logout:hover {
+    /* Background and Typography */
+    background-color: black;
+    font-style: italic;
+    color: white
+}
+
+.logout a {
+    /* Typography */
+    text-decoration: none;
+    color: black;
+}
+
+hr {
+    /* Box Model */
+    margin: 1rem 0;
+    border: none;
+    border-top: 2px solid white;
+}

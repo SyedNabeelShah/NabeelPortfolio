@@ -1,0 +1,115 @@
+/* Header styling */
+header {
+    /* Layout */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* Background and Typography */
+    background-color: black;
+    color: white;
+    padding-left: 0.8rem;
+}
+
+/* Typography */
+.header-left {
+    font-family: "Kode Mono", monospace;
+    padding-left: 0.7rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/* Navigation */
+.header-right ul {
+    list-style-type: none;
+    display: flex;
+    font-family: "Kode Mono", monospace;
+}
+
+.header-right ul li {
+    /* Box Model */
+    margin-right: 1.4rem;
+    margin-left: 1rem;
+}
+
+/* Typography */
+.header-right ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+
+/* Typography */
+.header-right ul li a:hover {
+    color: grey;
+}
+
+/* Typography */
+nav ul li:nth-child(4) a {
+    color: grey;
+}
+
+/* Main body */
+.main {
+    /* Layout */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* Background */
+    background-image: url('back.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* Box Model */
+    padding-bottom: 2rem;
+}
+
+
+/* CSS for Login Form */
+/* Layout */
+fieldset#login {
+    /* Box Model */
+    width: 20rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* Typography */
+    color: white;
+    text-align: center; 
+    background-color: black;
+    font-family: "Sulphur Point", sans-serif;
+}
+
+/* Form input */
+#login input[type="email"], input[type="password"] {
+    /* Box Model */
+    display: block;
+    width: 100%;
+    margin-bottom: 0.8rem;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+/* Submit button */
+#login input[type="submit"] {
+    /* Box Model */
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 25%;
+    /* Background and Typography */
+    background-color: lightyellow;
+    font-family: "Noto Sans Medefaidrin", sans-serif;
+    margin-left: 7.5rem;
+}
+
+/* Additional styling */
+div#test {
+    /* Box Model */
+    padding-bottom: 30rem;
+}
